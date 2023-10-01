@@ -34,6 +34,14 @@ h5{
     margin: 0px;
 }
 
+p{
+    font-family: Kumbh Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .p2{
     font-family: Kumbh Sans;
     font-size: 16px;
@@ -55,6 +63,7 @@ h5{
 
 .accent{
     cursor: pointer;
+    color: var(--color-text-accent);
 }
 
 body{
