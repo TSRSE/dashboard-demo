@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AM | Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/src/TempLogo.png">
+    <title>User's Dashboard</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -13,17 +14,18 @@
         <!-- Side bar -->
         <section class="side--bar">
             <ul class="side--navigation">
-                <li class="side--option active">Homepage</li>
-                <li class="side--option">My cards</li>
-                <li class="side--option">My comissions</li>
-                <li class="side--option">My comissioners</li>
-                <li class="side--option inactive">My cards</li>
+                <li class="side--option active"><img src="src/icons/paw.svg" alt="">Homepage</li>
+                <li class="side--option"><img src="src/icons/paw.svg" alt="">My cards</li>
+                <li class="side--option"><img src="src/icons/paw.svg" alt="">My comissions</li>
+                <li class="side--option"><img src="src/icons/paw.svg" alt="">My comissioners</li>
+                <li class="side--option inactive"><img src="src/icons/paw.svg" alt="">Customisation</li>
             </ul>
             <div class="subscription-block">
-                <img src="" alt="palette">
+                
                 <h4>Nitro Subscription</h4>
                 <Button class="slim">Subscribe</Button>
                 <p class="p3">Allows you to customize your cards, profile and more stats in dsahboard</p>
+                <img src="src/icons/palette.svg" alt="palette">
             </div>
         </section>
 
@@ -32,24 +34,51 @@
             <!-- Latests followers -->
             <div class="card vertical 1">
                 <div class="card--head">
-                    <h4>Title</h4>
-                    <img src="" alt="...">
+                    <h4>Latest followers</h4>
+                    <img src="src/icons/more-horizontal.svg" alt="...">
                 </div>
 
                 <div class="content column">
-                    Content
+                    <div class="follower--data">
+                        <div class="follower--horizontal">
+                            <div class="follower--avatar"><img src="" alt=""></div>
+                            <div class="follower--info">
+                                <h5>NameGoesHere</h5>
+                                <p class="p2">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follower--data">
+                        <div class="follower--horizontal">
+                            <div class="follower--avatar"><img src="" alt=""></div>
+                            <div class="follower--info">
+                                <h5>NameGoesHere</h5>
+                                <p class="p2">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follower--data">
+                        <div class="follower--horizontal">
+                            <div class="follower--avatar"><img src="" alt=""></div>
+                            <div class="follower--info">
+                                <h5>NameGoesHere</h5>
+                                <p class="p2">Date</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="card--tail">
                     <p class="p2 accent">Details</p>
-                    <img src="" alt=">">
+                    <img src="src/icons/navigate-next.svg" alt=">">
                 </div>
             </div>
 
             <!-- Overview -->
             <div class="card vertical 2">
                 <div class="card--head">
-                    <h4>Title</h4>
-                    <img src="" alt="...">
+                    <h4>Overview</h4>
+                    <img src="src/icons/more-horizontal.svg" alt="...">
                 </div>
 
                 <div class="content column">
@@ -57,7 +86,7 @@
                 </div>
                 <div class="card--tail">
                     <p class="p2 accent">Details</p>
-                    <img src="" alt=">">
+                    <img src="src/icons/navigate-next.svg" alt=">">
                 </div>
             </div>
 
@@ -65,16 +94,16 @@
 
             <div class="card horizontal 3">
                 <div class="card--head">
-                    <h4>Title</h4>
-                    <img src="" alt="...">
+                    <h4>Statistics</h4>
+                    <img src="src/icons/more-horizontal.svg" alt="...">
                 </div>
 
                 <div class="content column">
-                    Content
+                    Charts
                 </div>
                 <div class="card--tail">
                     <p class="p2 accent">Details</p>
-                    <img src="" alt=">">
+                    <img src="src/icons/navigate-next.svg" alt=">">
                 </div>
             </div>
         </section>
@@ -83,32 +112,71 @@
             <!-- Top posts -->
             <div class="card">
                 <div class="card--head">
-                    <h4>Title</h4>
-                    <img src="" alt="...">
+                    <h4>Top posts</h4>
+                    <img src="src/icons/more-horizontal.svg" alt="...">
                 </div>
 
                 <div class="content column">
-                    Content
+                    You don't have any posts yet
                 </div>
                 <div class="card--tail">
                     <p class="p2 accent">Details</p>
-                    <img src="" alt=">">
+                    <img src="src/icons/navigate-next.svg" alt=">">
                 </div>
             </div>
 
             <!-- Pending comissions -->
             <div class="card">
                 <div class="card--head">
-                    <h4>Title</h4>
-                    <img src="" alt="...">
+                    <h4>Pending comissions</h4>
+                    <img src="src/icons/more-horizontal.svg" alt="...">
                 </div>
 
                 <div class="content column">
-                    Content
+                    <div class="follower--data">
+                        <div class="follower--horizontal">
+                            <div class="follower--avatar"><img src="" alt=""></div>
+                            <div class="follower--info-full">
+                                <h5>NameGoesHere</h5>
+                                <p class="p2">Price</p>
+                                <p class="p2 red">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follower--data">
+                        <div class="follower--horizontal">
+                            <div class="follower--avatar"><img src="" alt=""></div>
+                            <div class="follower--info-full">
+                                <h5>NameGoesHere</h5>
+                                <p class="p2">Price</p>
+                                <p class="p2 yellow">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follower--data">
+                        <div class="follower--horizontal">
+                            <div class="follower--avatar"><img src="" alt=""></div>
+                            <div class="follower--info-full">
+                                <h5>NameGoesHere</h5>
+                                <p class="p2">Price</p>
+                                <p class="p2 green">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follower--data">
+                        <div class="follower--horizontal">
+                            <div class="follower--avatar"><img src="" alt=""></div>
+                            <div class="follower--info-full">
+                                <h5>NameGoesHere</h5>
+                                <p class="p2">Price</p>
+                                <p class="p2 green">Date</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card--tail">
                     <p class="p2 accent">Details</p>
-                    <img src="" alt=">">
+                    <img src="src/icons/navigate-next.svg" alt=">">
                 </div>
             </div>
         </section>
