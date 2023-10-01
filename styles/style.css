@@ -40,6 +40,8 @@ p{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 0px;
+    margin: 0px;
 }
 
 .p2{
@@ -59,11 +61,6 @@ p{
     line-height: normal;
     padding: 0px;
     margin: 0px;
-}
-
-.accent{
-    cursor: pointer;
-    color: var(--color-text-accent);
 }
 
 body{
@@ -158,7 +155,7 @@ body{
     color: var(--color-primary);
     border-radius: 8px;
     cursor: pointer;
-    transition: 250ms;
+    transition: 150ms;
 }
 
 .side--option.active{
@@ -184,10 +181,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 22px;
 
     text-align: center;
 
-    transition: 250ms;
+    transition: 150ms;
 }
 
 .subscription-block img{
@@ -212,11 +210,19 @@ button{
     cursor: pointer;
 
     z-index: 1;
+
+    transition: 150ms;
 }
 
 button:hover{
+    background-color: var(--color-text-white);
+    color: var(--color-primary);
     cursor: pointer;
+
+    /* transition: 250ms; */
 }
+
+
 
 /* Main - grid */
 .main--grid{
@@ -297,6 +303,60 @@ button:hover{
     height: 56px;
 }
 
+/* Additional stats */
+
+.small-stats{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.row-content{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+}
+
+.commission--stats{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.commission--data{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.spread{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular--tags{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tags{
+    display: flex;
+    gap: 10px;
+}
+.tag{
+    width: fit-content;
+    display: flex;
+    padding: 7px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    background-color: #3A3A41;
+}
+
 /* Color classes */
 
 .red{
@@ -309,4 +369,13 @@ button:hover{
 
 .green{
     color: #91C777;
+}
+
+.accent{
+    /* cursor: pointer; */
+    color: var(--color-text-accent);
+}
+
+.primary{
+    color: var(--color-primary);
 }
