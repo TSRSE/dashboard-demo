@@ -8,7 +8,6 @@
     --color-primary: #709DFF;
 }
 
-
 ul, li{
     list-style: none;
     padding: 0px;
@@ -20,6 +19,7 @@ h4{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 .p3{
@@ -29,6 +29,10 @@ h4{
     line-height: normal;
 }
 
+.accent{
+    cursor: pointer;
+}
+
 body{
     background-color: var(--color-background);
     color: var(--color-text-white);
@@ -36,35 +40,40 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 250ms;
 }
 
 .main{
     margin-top: 64px;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    
 }
 
 /* Card */
 .card{
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-backboard);
     border-radius: 8px;
     padding: 18px 22px 16px 22px;
-    /* width: 300px; */
+    width: auto;
+    height: 362px;
+    justify-content: space-between;
 }
 
 .card--head{
+    height: 30px;
     display: flex;
     flex-direction: row;
-    flex: auto;
     justify-content: space-between;
     align-items: center;
 }
 
 .card--tail{
+    height: 20px;
     display: flex;
     flex-direction: row;
-    flex: auto;
     align-items: center;
     gap: 5px;
     color: var(--color-text-accent);
@@ -72,13 +81,17 @@ body{
 
 /* Side - bar */
 .side--bar{
-    width: 320px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     color: var(--color-text-white);
+    gap: 48px;
+    align-items: center;
+    
 }
 
 .side--navigation{
+    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -118,12 +131,27 @@ body{
 
 /* Subscription - block */
 .subscription-block{
+    width: auto;
+    max-width: 210px;
+
+    padding: 28px 35px;
+    
     background: linear-gradient(#709DFF, #9191E5);
+
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    text-align: center;
+
+    transition: 250ms;
+}
+
+.subscription-block img{
+    position: absolute;
+    opacity: 20%;
 }
 
 button{
@@ -142,9 +170,11 @@ button{
 }
 
 
+
 /* Main - grid */
 
 .main--grid{
+    width: calc(300px*2);
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
@@ -158,4 +188,15 @@ button{
     grid-area: horizontal;
 }
 
+.vertical{
+    /* none */
+}
+
 /* Sub - grid */
+
+.sub--grid{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
