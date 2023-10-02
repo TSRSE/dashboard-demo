@@ -6,13 +6,27 @@
     --color-text-white: #fff;
     --color-text-accent: #6B6D83;
     --color-primary: #709DFF;
+    --color-secondary: #9191E5;
     --color-dash: #505367;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-text-white);
 }
 
 ul, li{
     list-style: none;
     padding: 0px;
     margin: 0px;
+}
+
+h3{
+    font-family: Kumbh Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 h4{
@@ -68,16 +82,61 @@ body{
     color: var(--color-text-white);
     font-family: 'Kumbh Sans', sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navigation{
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-backboard);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.right-side ul{
+    display: flex;
+    gap: 24px;
+}
+
+.right-side a{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
 }
 
 .main{
-    margin-top: 64px;
+    margin-top: 32px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    
 }
 
 /* Card */
@@ -181,7 +240,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 22px;
+    gap: 26px;
 
     text-align: center;
 
@@ -372,10 +431,75 @@ button:hover{
 }
 
 .accent{
-    /* cursor: pointer; */
+    cursor: pointer;
     color: var(--color-text-accent);
+}
+
+.secondary{
+    color: var(--color-secondary);
 }
 
 .primary{
     color: var(--color-primary);
+}
+
+
+/* Charts */
+
+.charts--container{
+    margin-top: 24px;
+}
+
+.chart--info{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart h5{
+    position: absolute;
+}
+
+.color--data{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.chart--details{
+    margin-top: 16px;
+    display: flex;
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.color-secondary{
+    background-color: var(--color-secondary);
+}
+
+.color-dark{
+    background-color: var(--color-text-accent);
+}
+
+.color-primary{
+    background-color: var(--color-primary);
+}
+
+.separator{
+    background-color: var(--color-dash);
+    width: 1px;
+    height: 100%;
 }
